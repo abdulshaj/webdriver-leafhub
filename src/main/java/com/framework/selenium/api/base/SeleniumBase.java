@@ -555,8 +555,8 @@ public class SeleniumBase extends ExtentReporter implements Browser, Element  {
 				setDriver("chrome", headless);
 			} else if (browser.equalsIgnoreCase("firefox")) {
 				setDriver("firefox", headless);
-			} else if (browser.equalsIgnoreCase("msedge")) {
-				setDriver("msedge",headless);
+			} else if (browser.equalsIgnoreCase("msEdge")) {
+				setDriver("msEdge",headless);
 			}
 			setWait();
 			getDriver().manage().window().maximize();

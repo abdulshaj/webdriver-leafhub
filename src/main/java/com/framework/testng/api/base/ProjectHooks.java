@@ -12,6 +12,9 @@ import com.framework.utils.ReadExcel;
 
 public class ProjectHooks extends SeleniumBase {
 
+	public String browser;
+
+
 	@DataProvider(name = "fetchData", indices = 0)
 	public Object[][] fetchData() throws IOException {
 		return ReadExcel.readExcelData(excelFileName);
@@ -27,7 +30,7 @@ public class ProjectHooks extends SeleniumBase {
 		}
 		System.out.println("Application URL: " +appUrl);
 		
-		startApp("chrome", true, appUrl);
+		startApp(browser, true, appUrl);
 		setNode();
 	}
 	

@@ -52,4 +52,8 @@ public interface Configuration extends Config {
 	 @Key("faker.locale")
 	 String faker();
 
+	@Key("url.grid")
+	String gridUrl();
+
+
 }

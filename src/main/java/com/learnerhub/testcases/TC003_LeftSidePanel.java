@@ -13,6 +13,7 @@ public class TC003_LeftSidePanel extends ProjectHooks {
         testDescription = "SideBarcheck";
         authors = "Babu";
         category = "Smoke";
+        browser = "msEdge";
     }
 
     @Test
